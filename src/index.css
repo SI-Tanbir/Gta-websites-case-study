@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 @font-face {
   font-family: "Long";
   src: url("/fonts/long.woff");
@@ -73,7 +75,8 @@ main {
     @apply w-dvw h-dvh relative overflow-hidden;
 
     .scale-out {
-      @apply object-cover md:scale-125 h-full;
+      @apply object-cover h-full;
+      transform: scale(1.50);
     }
     .title-logo {
       @apply absolute h-full md:scale-125 top-0 object-cover;
