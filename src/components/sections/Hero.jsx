@@ -59,6 +59,20 @@ const Hero = () => {
             maskSize: maskSize,
             ease:'power2.inOut'
         },"<")
+        .to('.mask-wrapper',{
+            opacity:0
+
+        })
+        // .to('.mask-logo',{
+        //     opacity:1,
+        //     ease:'power2.inOut'
+        // },"<")
+        .to('.entrance-message',{
+            duration:1,
+            ease:'power2.inOut',
+            maskImage: 'radial-gradient(circle at 50% 0vh, black 50%, transparent 100%)'
+        },'<')
+        
         
 
 
@@ -86,8 +100,8 @@ const Hero = () => {
 
         </div>
 
-        <div>
-            <img src="/images/big-hero-text.svg" className='object-cover size-ful mask-logo' />
+        <div className='overlay-logo'>
+            <img src="/images/big-hero-text.svg" className='object-cover  mask-logo' />
 
 
         </div>
