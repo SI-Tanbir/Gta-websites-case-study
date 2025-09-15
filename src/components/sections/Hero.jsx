@@ -54,6 +54,10 @@ const Hero = () => {
             width:'100%',
             ease:'power2.inOut'
         })
+        .to('.mask-wrapper',{
+            maskSize: maskSize,
+            ease:'power2.inOut'
+        })
         
 
 
