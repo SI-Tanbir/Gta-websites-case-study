@@ -112,6 +112,11 @@ main {
       @apply mt-40 md:mt-60 2xl:mt-44 3xl:top-48;
     }
   }
+
+  /* jason life css section */
+  
+
+  
   .jason {
     @apply relative z-10 lg:ps-40 2xl:ps-80 ps-10 py-40 mt-60 flex lg:flex-row flex-col justify-between gap-5 w-dvw overflow-x-hidden;
 
@@ -139,10 +144,10 @@ main {
       }
     }
     .jason-3 {
-      @apply bg-yellow h-[50vh] md:w-[60%] -translate-x-5;
+      @apply bg-yellow    -translate-x-5  ;
 
       img {
-        @apply size-full object-cover [object-position:42%_center] hover:scale-[0.97] transition duration-700 ease-in-out;
+        @apply  object-cover [object-position:42%_center] hover:scale-[0.97] transition duration-700 ease-in-out;
       }
     }
   }
@@ -254,6 +259,79 @@ main {
   background: radial-gradient(ellipse, #111117 20%, transparent 70%);
 }
 
-.lucia-life-content {
-  background: radial-gradient(ellipse, #111117 20%, transparent 70%);
-}
+  .lucia-life-content {
+    background: radial-gradient(ellipse, #111117 20%, transparent 70%);
+  }
+
+  /* Jason Life Section - Exact Layout Match */
+
+  .jason-life-content{
+    display: grid;
+    grid-template-columns: 40% auto;
+    gap: 20px;
+  }
+  .jason-life-gallery {
+    display: grid;
+    grid-template-columns: 40% auto;
+    gap:10px
+  }
+ 
+
+  .jason-life-section {
+    @apply relative py-20 px-5 md:px-10 lg:px-20;
+  }
+
+  .jason-life-container {
+    @apply max-w-7xl mx-auto  gap-10 lg:gap-20 items-start;
+  }
+
+  .jason-life-content {
+    @apply space-y-6;
+
+    h2 {
+      @apply text-yellow font-long uppercase text-6xl lg:text-7xl xl:text-8xl;
+    }
+
+    h3 {
+      @apply text-pink text-2xl lg:text-3xl xl:text-4xl font-medium leading-tight;
+    }
+
+    p {
+      @apply text-white text-lg lg:text-xl xl:text-2xl leading-relaxed;
+    }
+  }
+
+
+
+  .jason-1 {
+    @apply bg-yellow overflow-hidden rounded-lg mb-4;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  .jason-2 {
+    @apply bg-yellow overflow-hidden rounded-lg;
+    transition: transform 0.3s ease;
+    width:484px;
+    height: 600px;
+
+    &:hover {
+      border:2px solid white;
+      transform: scale(0.95);
+    }
+
+    img {
+      @apply w-full h-full object-cover;
+      object-position: 80% 30%; /* Focus on right side, slightly up */
+      transform: scale(1.2); /* Zoom in to show more detail */
+    }
+  }
+
+ 
