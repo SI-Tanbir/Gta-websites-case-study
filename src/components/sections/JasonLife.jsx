@@ -17,7 +17,7 @@ useGSAP(()=>{
             start: 'top 80%',
             end: ' 5% center',
             scrub: 2,
-            markers: true,
+            markers: false,
             
         }
 
@@ -36,7 +36,7 @@ useGSAP(()=>{
         start:'top center',
         end:'80% center',
         scrub: 2,
-        markers: true,
+        markers: false,
       },y:-200,duration:1,ease:'Power1.inOut'
     },'<')
 

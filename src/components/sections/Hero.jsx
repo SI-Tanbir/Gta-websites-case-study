@@ -37,7 +37,7 @@ const Hero = () => {
                 start: 'top top',
                 end: '+=200%',
                 scrub: true,
-                markers: true,
+                markers: false,
                 pin:true 
             }
 

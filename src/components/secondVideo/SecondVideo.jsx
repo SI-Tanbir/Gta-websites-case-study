@@ -18,7 +18,7 @@ const SecondVideo = () => {
         end: '+=150%',
         scrub: true,
         pin: '.second-vd-wrapper',        // pin the second section
-        markers: true
+        markers: false
       }
     })
 

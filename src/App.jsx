@@ -7,6 +7,7 @@ import FirstVideo from './components/firstVideo/FirstVideo';
 import JasonLife from './components/sections/JasonLife';
 import SecondVideo from './components/secondVideo/SecondVideo';
 import LuciaCaminos from './components/LuciaCaminos/LuciaCaminos';
+import FinalSection from './components/sections/FinalSection';
 
 
 
@@ -25,6 +26,7 @@ const App = () => {
       <SecondVideo />
       
       <LuciaCaminos />
+      <FinalSection />
 
     </main>
   )
