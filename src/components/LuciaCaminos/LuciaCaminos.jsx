@@ -4,13 +4,13 @@ import React from 'react'
 
 const LuciaCaminos = () => {
   return (
-    <section className='grid grid-cols-2'>
+    <section className='grid grid-cols-1 md:grid-cols-2'>
        
        
         <div className='lucia-container  '>
           
 
-            <div className='mt-80'>
+            <div className='md:mt-80 mt-10'>
             <div className='lucia-boxing'>
 
             </div>
@@ -33,7 +33,7 @@ const LuciaCaminos = () => {
         <div className='lucila-second-part'>
         
                       
-              <div className='p-10 pb-40'>        
+              <div className='p-5 md:p-10 md:pb-40'>        
               <h3 className="whitespace-nowrap">Lucia Caminos</h3>
               <h4>Lucia’s father taught her to fight as soon as she could walk.</h4>
               <p>Life has been coming at her swinging ever since. Fighting for her family landed her in the Leonida Penitentiary. Sheer luck got her out. Lucia’s learned her lesson — only smart moves from here.</p>

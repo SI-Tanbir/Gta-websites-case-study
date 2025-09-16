@@ -336,6 +336,8 @@ main {
 
  
   .second-vd-wrapper { height: 100vh; }
+  .second-vd-container { width: 100%; height: 100%; }
+  .second-vd-video { width: 100%; height: 100%; object-fit: cover; }
 
 
 
@@ -421,6 +423,30 @@ main {
 
 }
 
+
+/* Mobile layout adjustments */
+@media (max-width: 768px) {
+  .second-vd-wrapper { height: 100vh; }
+  .second-vd-video { object-position: 50% 30%; }
+  .lucia-container { grid-template-columns: 1fr; gap: 20px; }
+  .lucila-second-part { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  .lucia-boxing, .lucia-2 { height: 44vh; }
+  .lucia-jails { width: 100%; height: 44vh; transform: none; }
+  .lucia-content { padding: 16px; font-size: 16px; }
+  .lucila-second-part h3 { font-size: 2.5rem; }
+  .lucila-second-part h4 { font-size: 1.25rem; }
+}
+
+/* Jason Duval – mobile responsive tweaks */
+@media (max-width: 768px) {
+  .jason-life-content { display: block; }
+  .jason-life-content-text { padding: 16px; }
+  .jason-life-gallery { grid-template-columns: 1fr; gap: 12px; }
+  .jason-1 { height: 40vh; margin-top: 1rem !important; }
+  .jason-2 { width: 100%; height: 50vh; margin-top: 0 !important; }
+  .jason-3 { height: 50vh; }
+  .jason-1 img, .jason-2 img, .jason-3 img { object-fit: cover; width: 100%; height: 100%; }
+}
 
 /* 
 

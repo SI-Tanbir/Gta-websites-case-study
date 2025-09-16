@@ -9,34 +9,55 @@ const SecondVideo = () => {
   const videoRef = useRef(null)
 
   useGSAP(() => {
-    gsap.set('.second-vd-wrapper', { opacity: 0,marginTop:'-100vh' }) 
+    ScrollTrigger.matchMedia({
+      '(min-width: 769px)': function () {
+        gsap.set('.second-vd-wrapper', { opacity: 0, marginTop: '-100vh' })
 
-    const tl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.second-vd-wrapper',   // previous section
-        start: 'top top',
-        end: '+=150%',
-        scrub: true,
-        pin: '.second-vd-wrapper',        // pin the second section
-        markers: false
-      }
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.second-vd-wrapper',
+            start: 'top top',
+            end: '+=150%',
+            scrub: true,
+            pin: '.second-vd-wrapper',
+            markers: false,
+          },
+        })
+
+        tl.to('.second-vd-wrapper', { opacity: 1, ease: 'power1.inOut' })
+        videoRef.current.onloadedmetadata = () => {
+          tl.to(
+            videoRef.current,
+            { currentTime: videoRef.current.duration, duration: 3, ease: 'power1.inOut' },
+            '<'
+          )
+        }
+      },
+
+      '(max-width: 768px)': function () {
+        gsap.set('.second-vd-wrapper', { opacity: 0, marginTop: '-40vh' })
+
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.second-vd-wrapper',
+            start: 'top top',
+            end: '+=110%',
+            scrub: true,
+            pin: '.second-vd-wrapper',
+            markers: false,
+          },
+        })
+
+        tl.to('.second-vd-wrapper', { opacity: 1, ease: 'power1.inOut' })
+        videoRef.current.onloadedmetadata = () => {
+          tl.to(
+            videoRef.current,
+            { currentTime: videoRef.current.duration, duration: 2, ease: 'power1.inOut' },
+            '<'
+          )
+        }
+      },
     })
-
-
-    tl2.to('.second-vd-wrapper',{
-      opacity:1,
-      ease:'power1.inOut'
-    })
-    videoRef.current.onloadedmetadata=()=>{
-
-      tl2.to(videoRef.current,{currentTime:videoRef.current.duration,duration:3,ease:'power1.inOut'},'<')
-
-    }
-
-
-
-    
-
   })
 
   return (
