@@ -40,7 +40,7 @@ const SecondVideo = () => {
   })
 
   return (
-    <section className='second-vd-wrapper' >
+    <section className='second-vd-wrapper overflow-hidden' >
       <div className='second-vd-container'>
         <video
           ref={videoRef}

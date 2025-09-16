@@ -6,6 +6,7 @@ import CommingSoon from './components/sections/CommingSoon';
 import FirstVideo from './components/firstVideo/FirstVideo';
 import JasonLife from './components/sections/JasonLife';
 import SecondVideo from './components/secondVideo/SecondVideo';
+import LuciaCaminos from './components/LuciaCaminos/LuciaCaminos';
 
 
 
@@ -22,6 +23,8 @@ const App = () => {
       <JasonLife /> 
       {/* lucia life second vides */}
       <SecondVideo />
+      
+      <LuciaCaminos />
 
     </main>
   )

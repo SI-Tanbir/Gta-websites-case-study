@@ -858,6 +858,27 @@ const SecondVideo = () => {
 export default SecondVideo
 ```
 
+
+
+
+# when croping you image specific size you have to give the hight or width absoulate unit (px) , giving relative unit don't work some time 
+    ```css
+
+
+.lucia-boxing {
+  background-image: url("/images/lucia-1.webp");
+  background-size: cover;          /* scale to cover box */
+  background-position: 86% 100%;    /* focus on that area */
+  background-repeat: no-repeat;
+  /* optional: keep bg fixed on scroll */
+  /* background-attachment: fixed; */
+  width: 100%;
+  height:500px;                    /* must have height */
+}
+    ```
+
+
+
 ---
 
 ## Resources & Tools
