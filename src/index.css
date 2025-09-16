@@ -378,7 +378,7 @@ main {
 /* If .lucia-2 is the IMG element */
 .lucia-container  {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
 }
 
 
@@ -416,7 +416,7 @@ main {
   background-size: cover;
   background-position: 63% 0%;
   background-repeat: no-repeat;
-  transform: translateX(50%);
+  transform: translateX(70%);
   
 
 }
